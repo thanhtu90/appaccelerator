@@ -1,10 +1,11 @@
 This project provide api to support listing local file
 
-Edit docker-compose.yml and map your source path for root directory to volume :
+Edit docker-compose.yml and map your source path for root directory to volume (Please do not leave trailing slash in path):
+
 For linux:
 
 - x-source-os: &source-os linux
-- x-source-path: &source-path /Users/apple/Desktop/
+- x-source-path: &source-path /Users/apple/Desktop
 
 For window:
 
@@ -18,3 +19,7 @@ docker-compose up -d dev
 
 Swagger:
 localhost:3000/api
+
+Next Thought:
+
+- provide filter by type ( directory / file )

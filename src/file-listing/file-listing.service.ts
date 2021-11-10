@@ -139,7 +139,7 @@ export class FileListingService {
   }
 
   isRoot(absolutePath: string): boolean {
-    return absolutePath === process.env.TARGET_ROOT_DIR;
+    return absolutePath === process.env.SOURCE_ROOT_DIR;
   }
 
   convertWindowPath(windowFilePath: string): string {

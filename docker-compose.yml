@@ -2,7 +2,7 @@ version: '3.8'
 
 x-source-os: &source-os linux
 x-per-page: &per-page 10
-x-source-path: &source-path /Users/apple/Desktop/
+x-source-path: &source-path /Users/apple/Desktop
 x-target-path: &target-path /mnt
 
 services:
